@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "projectName": "RepoTest Demo",
+  "testTypes": [
+    { "id": "unit", "label": "Unit" },
+    { "id": "e2e", "label": "E2E" },
+    { "id": "both", "label": "Unit + E2E" }
+  ],
+  "platforms": [
+    { "id": "web", "label": "Web" },
+    { "id": "mobile-android", "label": "Android" },
+    { "id": "mobile-ios", "label": "iOS" }
+  ],
+  "environments": [
+    { "id": "local", "label": "Local" },
+    { "id": "staging", "label": "Staging" }
+  ],
+  "features": [
+    { "slug": "all", "label": "All", "web": true, "mobile": true },
+    { "slug": "auth", "label": "Authentication", "web": true, "mobile": true },
+    { "slug": "checkout", "label": "Checkout", "web": true, "mobile": false }
+  ]
+}
