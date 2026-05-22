@@ -1,6 +1,8 @@
 # RepoTest App Review sample project
 
-Self-contained demo repository for **Apple App Review** and anyone evaluating **RepoTest**. It implements the [RepoTest scripts contract](https://github.com/nikolayu/MacTestRunner/blob/main/docs/integrating-your-project.md) without installing npm packages or running real Vitest/Playwright.
+Self-contained demo repository for **Apple App Review** and anyone evaluating **[RepoTest](https://repotest.app)** on the Mac App Store.
+
+Implements the RepoTest `scripts/` contract (`test.sh`, `test-manifest.json`) without installing npm packages or running real Vitest/Playwright. See the [integrating your project](https://github.com/nikolayu/MacTestRunner/blob/main/docs/integrating-your-project.md) guide in the main RepoTest repo for the full contract.
 
 ## Quick start (in RepoTest)
 
@@ -62,6 +64,15 @@ E2E and **Unit + E2E** require **RepoTest Pro**. In review builds, sign in with 
 | `fixtures/` | Sample screenshot, video, error context for E2E failure UI |
 | `apps/web/.env` | Silences optional DB env prerequisite warning |
 
+## Clone
+
+```bash
+git clone https://github.com/YOUR_ORG/repotest-app-review-sample.git
+cd repotest-app-review-sample
+```
+
+Replace the URL with your published remote after `git remote add origin …` and `git push`.
+
 ## Distribution for review
 
-Zip this folder or host it as a public git repo and paste the path/URL into **App Review Information → Notes** in App Store Connect. See `docs/app-store-demo-repo.md` in the RepoTest repository for suggested review note text.
+Zip this repo or paste the **public clone URL** into **App Review Information → Notes** in App Store Connect.
