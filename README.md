@@ -64,15 +64,3 @@ E2E and **Unit + E2E** require **RepoTest Pro**. In review builds, sign in with 
 | `fixtures/` | Sample screenshot, video, error context for E2E failure UI |
 | `apps/web/.env` | Silences optional DB env prerequisite warning |
 
-## Clone
-
-```bash
-git clone https://github.com/YOUR_ORG/repotest-app-review-sample.git
-cd repotest-app-review-sample
-```
-
-Replace the URL with your published remote after `git remote add origin …` and `git push`.
-
-## Distribution for review
-
-Zip this repo or paste the **public clone URL** into **App Review Information → Notes** in App Store Connect.
